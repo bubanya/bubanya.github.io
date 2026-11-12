@@ -1,21 +1,37 @@
 # bubanya.github.io
 
-Статический сайт Bubanya для GitHub Pages.
+Статическая сборка лендинга Bubanya для GitHub Pages.
 
-## Публикация
+## Источник
 
-1. Создай на GitHub репозиторий `bubanya.github.io` (public).
-2. Запушь этот репозиторий в `main`.
-3. Settings → Pages → Source: Deploy from a branch → `main` / `(root)` → Save.
-4. Сайт появится на https://bubanya.github.io/
+Исходник сайта: `/home/ebalai/Проекты/bubanya-site` (Vite + React + TypeScript).
+Здесь лежит только собранный `dist/`.
 
-## Ссылки на скачивание
+Пересборка:
 
-Сайт ссылается на стабильные имена ассетов из релизов основного репозитория
-`bubanya/bubanya`:
+```bash
+cd /home/ebalai/Проекты/bubanya-site
+npm run build
+cp -a dist/. /home/ebalai/11/bubanya.github.io/
+```
+
+## Скачивание сборок
+
+Сайт не хранит большие файлы. Кнопки ведут на GitHub Releases:
 
 - `Bubanya-linux-x86_64.AppImage`
 - `Bubanya-windows-x64-setup.exe`
 - `Bubanya-windows-x64.zip`
 
-Их создаёт workflow `.github/workflows/release.yml` при пуше тега `v*`.
+Прямые ссылки:
+
+```
+https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-linux-x86_64.AppImage
+https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-windows-x64-setup.exe
+https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-windows-x64.zip
+```
+
+## Публикация
+
+Settings → Pages → Deploy from a branch → `main` / `(root)`.
+Сайт: https://bubanya.github.io/
