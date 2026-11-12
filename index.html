@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bubanya — лёгкий Minecraft-лаунчер с Forge, Fabric, Modrinth, модпаками и Java-менеджером.">
+  <title>Bubanya — Minecraft launcher</title>
+  <link rel="icon" type="image/png" href="assets/bubanya.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">
+      <img src="assets/bubanya.png" alt="">
+      <span>BUBANYA</span>
+    </a>
+    <nav>
+      <a href="#features">Возможности</a>
+      <a href="#install">Установка</a>
+      <a href="https://github.com/bubanya/bubanya" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">MINECRAFT LAUNCHER · v0.1.0</div>
+        <h1>Играй.<br>Без лишнего.</h1>
+        <p class="lead">
+          Forge и Fabric, моды и модпаки с Modrinth, Java-менеджер, аккаунты
+          и скины. Тёмный, быстрый лаунчер без телеметрии и рекламы.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-linux-x86_64.AppImage">
+            Скачать для Linux
+          </a>
+          <a class="btn" href="https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-windows-x64-setup.exe">
+            Скачать для Windows
+          </a>
+        </div>
+        <div class="meta">
+          <span>AppImage · x86_64</span>
+          <span>NSIS · x64</span>
+          <a href="https://github.com/bubanya/bubanya/releases" target="_blank" rel="noreferrer">Все релизы →</a>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="assets/screenshot.png" alt="Bubanya — библиотека инстансов">
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head">
+        <h2>Что внутри</h2>
+        <p>Всё, что нужно для сборок, без лишних окон и настроек.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <span class="num">01</span>
+          <h3>Forge и Fabric</h3>
+          <p>Установка версий, загрузчиков, библиотек и ассетов. Официальный инсталлер Forge с обходом zlib на CachyOS.</p>
+        </article>
+        <article class="feature">
+          <span class="num">02</span>
+          <h3>Modrinth</h3>
+          <p>Поиск модов и модпаков, смена версий, обновление всех модов и автоустановка required-зависимостей.</p>
+        </article>
+        <article class="feature">
+          <span class="num">03</span>
+          <h3>Модпаки</h3>
+          <p>Импорт <code>.mrpack</code> из файла, обновление установленного пака и сохранение миров при обновлении.</p>
+        </article>
+        <article class="feature">
+          <span class="num">04</span>
+          <h3>Java</h3>
+          <p>Adoptium JRE 8/17/21/25, проверка SHA256, авто-выбор под версию игры и скачивание при первом запуске.</p>
+        </article>
+        <article class="feature">
+          <span class="num">05</span>
+          <h3>Аккаунты и скины</h3>
+          <p>Оффлайн-профили и Microsoft device-code вход. Токены в системном keyring, скины с официального sessionserver.</p>
+        </article>
+        <article class="feature">
+          <span class="num">06</span>
+          <h3>Загрузки</h3>
+          <p>Прогресс, пауза, продолжение и отмена. Стриминг в файл и потоковая проверка SHA1 — без лишней RAM.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="install" class="section">
+      <div class="section-head">
+        <h2>Установка</h2>
+        <p>Пара шагов — и можно запускать.</p>
+      </div>
+      <div class="install">
+        <article class="step">
+          <div class="step-label">Linux · x86_64</div>
+          <ol>
+            <li>Скачай <code>Bubanya-linux-x86_64.AppImage</code>.</li>
+            <li>Выдай права: <code>chmod +x Bubanya-linux-x86_64.AppImage</code>.</li>
+            <li>Запусти файл. Данные появятся в <code>~/.local/share/Bubanya</code>.</li>
+          </ol>
+          <a class="btn primary" href="https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-linux-x86_64.AppImage">Скачать AppImage</a>
+        </article>
+        <article class="step">
+          <div class="step-label">Windows · x64</div>
+          <ol>
+            <li>Скачай <code>Bubanya-windows-x64-setup.exe</code>.</li>
+            <li>Нужен Microsoft Edge WebView2 Runtime — на Windows 10/11 обычно уже есть.</li>
+            <li>Сборка не подписана: SmartScreen → «Подробнее» → «Выполнить в любом случае».</li>
+          </ol>
+          <div class="buttons">
+            <a class="btn primary" href="https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-windows-x64-setup.exe">Скачать установщик</a>
+            <a class="btn" href="https://github.com/bubanya/bubanya/releases/latest/download/Bubanya-windows-x64.zip">Портативная версия</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-brand">
+      <img src="assets/bubanya.png" alt="">
+      <span>BUBANYA</span>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/bubanya/bubanya" target="_blank" rel="noreferrer">Исходники</a>
+      <a href="https://github.com/bubanya/bubanya/releases" target="_blank" rel="noreferrer">Релизы</a>
+      <span>Tauri 2 · React 19</span>
+    </div>
+  </footer>
+</body>
+</html>
